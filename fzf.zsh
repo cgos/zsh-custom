@@ -1,0 +1,8 @@
+# Set fzf installation directory path
+export FZF_BASE=/usr/local/Cellar/fzf/0.18.0
+
+# Uncomment the following line to disable fuzzy completion
+# export DISABLE_FZF_AUTO_COMPLETION="true"
+
+# Uncomment the following line to disable key bindings (CTRL-T, CTRL-R, ALT-C)
+# export DISABLE_FZF_KEY_BINDINGS="true"
