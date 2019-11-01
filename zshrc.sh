@@ -61,7 +61,7 @@ ZSH_THEME="robbyrussell"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/Sandboxes/cgos/zsh-custom
+ZSH_CUSTOM=$HOME/Sandboxes/github/cgos/zsh-custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -71,6 +71,9 @@ ZSH_CUSTOM=$HOME/Sandboxes/cgos/zsh-custom
 plugins=(
     git
     fzf
+    docker
+    kubectl
+    vscode
     )
 
 source $ZSH/oh-my-zsh.sh
