@@ -104,5 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ag="alias | grep "
+
 source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
