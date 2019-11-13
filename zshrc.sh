@@ -106,5 +106,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ag="alias | grep "
 
+# ⌥ + ← or → - move one word backward/forward
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+
 source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
