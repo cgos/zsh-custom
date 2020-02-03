@@ -69,6 +69,7 @@ ZSH_CUSTOM=$HOME/Sandboxes/github/cgos/zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    gcloud
     git
     fzf
     docker
