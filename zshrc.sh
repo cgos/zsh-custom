@@ -78,6 +78,7 @@ plugins=(
     docker
     kubectl
     vscode
+    terraform
     )
 
 source $ZSH/oh-my-zsh.sh
