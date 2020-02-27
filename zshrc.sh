@@ -117,3 +117,4 @@ bindkey "[C" forward-word
 
 source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
