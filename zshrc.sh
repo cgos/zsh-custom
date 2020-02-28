@@ -119,6 +119,10 @@ bindkey "[C" forward-word
 source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
 source $ZSH_CUSTOM/gcloud.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
+
+
