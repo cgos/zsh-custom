@@ -7,6 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Path to credential for Terraform to use GCP
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/credential.json"
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -118,4 +119,11 @@ bindkey "[C" forward-word
 source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
 source $ZSH_CUSTOM/go.zsh
+source $ZSH_CUSTOM/gcloud.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+
+
