@@ -20,6 +20,7 @@ if [[ -z "${CLOUDSDK_HOME}" ]]; then
       break
     fi
   done
+  export PATH=$CLOUDSDK_HOME/bin:$PATH
 fi
 
 if (( ${+CLOUDSDK_HOME} )); then
@@ -30,5 +31,5 @@ if (( ${+CLOUDSDK_HOME} )); then
     fi
   fi
   source "${CLOUDSDK_HOME}/completion.zsh.inc"
-  export CLOUDSDK_HOME
+  export CLOUDSDK_HOME  
 fi
