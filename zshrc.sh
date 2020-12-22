@@ -4,9 +4,6 @@ export PATH=$HOME/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Path to credential for Terraform to use GCP
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/credential.json"
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,13 +70,10 @@ ZSH_CUSTOM=$HOME/Sandboxes/github/cgos/zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    gcloud
+    vscode
     git
     fzf
-    docker
-    kubectl
-    vscode
-    terraform
+    aws
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,14 +110,20 @@ alias ag="alias | grep "
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
-source $ZSH_CUSTOM/sdkman.zsh
+#source $ZSH_CUSTOM/sdkman.zsh
 source $ZSH_CUSTOM/fzf.zsh
-source $ZSH_CUSTOM/go.zsh
-source $ZSH_CUSTOM/gcloud.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source $ZSH_CUSTOM/go.zsh
+#source $ZSH_CUSTOM/gcloud.zsh
+#source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
+#complete -o nospace -C /usr/local/bin/terraform terraform
 
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/cgossel/.sdkman"
+[[ -s "/Users/cgossel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cgossel/.sdkman/bin/sdkman-init.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
