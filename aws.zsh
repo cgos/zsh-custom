@@ -1,0 +1,1 @@
+export SHOW_AWS_PROMPT=false
