@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -73,9 +73,10 @@ ZSH_CUSTOM=$HOME/Sandboxes/github/cgos/zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-   fzf
+    fzf
     aws
     vscode
+    docker
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ag="alias | grep "
+#alias mc="mc --nosubshell"
 
 # ⌥ + ← or → - move one word backward/forward
 bindkey "[D" backward-word
@@ -129,3 +131,6 @@ export SDKMAN_DIR="/Users/cgossel/.sdkman"
 [[ -s "/Users/cgossel/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cgossel/.sdkman/bin/sdkman-init.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Created by `userpath` on 2021-02-03 20:38:24
+export PATH="$PATH:/Users/cgossel/.local/bin"
